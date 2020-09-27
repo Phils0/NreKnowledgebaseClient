@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NreKnowledgebaseClient", "NreKnowledgebaseClient\NreKnowledgebaseClient.csproj", "{B70582F2-C861-4A3F-8918-BAE95382ACC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{6FF2AB4F-7CE6-41B0-AB4A-09C3CC42E429}"
+ProjectSection(SolutionItems) = preProject
+	LICENSE = LICENSE
+	README.md = README.md
+	.gitignore = .gitignore
+	RSPS5050 KnowledgeBase Data Feeds 01-00.pdf = RSPS5050 KnowledgeBase Data Feeds 01-00.pdf
+	azure-pipelines.yml = azure-pipelines.yml
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NreKnowledgebaseClientTest", "NreKnowledgebaseClientTest\NreKnowledgebaseClientTest.csproj", "{0E7482A6-6B65-4C84-B046-0E344409A9FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B70582F2-C861-4A3F-8918-BAE95382ACC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70582F2-C861-4A3F-8918-BAE95382ACC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70582F2-C861-4A3F-8918-BAE95382ACC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70582F2-C861-4A3F-8918-BAE95382ACC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7482A6-6B65-4C84-B046-0E344409A9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7482A6-6B65-4C84-B046-0E344409A9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7482A6-6B65-4C84-B046-0E344409A9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7482A6-6B65-4C84-B046-0E344409A9FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

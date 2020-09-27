@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NSI xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://internal.nationalrail.co.uk/xml/XsdSchemas/External/Version4.0/nre-service-indicator-v4-0.xsd" xmlns="http://nationalrail.co.uk/xml/serviceindicator">
+  <TOC>
+    <TocCode>VT</TocCode>
+    <TocName>Avanti West Coast</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Delays through Birmingham New Street]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Birmingham New Street</GroupName>
+      <CurrentDisruption>84504DB77A844D388EB9CFAD6D7032A9</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>AvantiWestCoast</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CC</TocCode>
+    <TocName>c2c</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>c2c_Rail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CS</TocCode>
+    <TocName>Caledonian Sleeper</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>CalSleeper</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CH</TocCode>
+    <TocName>Chiltern Railways</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>chilternrailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>XC</TocCode>
+    <TocName>CrossCountry</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Delays through Birmingham New Street]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Birmingham New Street</GroupName>
+      <CurrentDisruption>84504DB77A844D388EB9CFAD6D7032A9</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <GroupName>Stonehaven</GroupName>
+      <CurrentDisruption>17BA176CD23E4D18AB281451D3F8EDE0</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>crosscountryuk</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>EM</TocCode>
+    <TocName>East Midlands Railway</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>EastMidRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>ES</TocCode>
+    <TocName>Eurostar</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>EurostarUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GX</TocCode>
+    <TocName>Gatwick Express</TocName>
+    <Status>No service</Status>
+    <StatusImage>icon-disruption.png</StatusImage>
+    <ServiceGroup>
+      <GroupName>Coronavirus</GroupName>
+      <CurrentDisruption>1F67D8B3B4024F968B4F73B6DC7BD48B</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>GatwickExpress</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GC</TocCode>
+    <TocName>Grand Central</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>GC_Rail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GN</TocCode>
+    <TocName>Great Northern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>GNRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GW</TocCode>
+    <TocName>Great Western Railway</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>GWRHelp</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LE</TocCode>
+    <TocName>Greater Anglia</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>greateranglia</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>HX</TocCode>
+    <TocName>Heathrow Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>HeathrowExpress</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>HT</TocCode>
+    <TocName>Hull Trains</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>Hull_Trains</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>IL</TocCode>
+    <TocName>Island Line</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>SW_Help</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GR</TocCode>
+    <TocName>London North Eastern Railway</TocName>
+    <Status>Minor delays on some routes</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <ServiceGroup>
+      <GroupName>Stonehaven</GroupName>
+      <CurrentDisruption>17BA176CD23E4D18AB281451D3F8EDE0</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>LNER</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LN</TocCode>
+    <TocName>London Northwestern Railway</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Delays through Birmingham New Street]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Birmingham New Street</GroupName>
+      <CurrentDisruption>84504DB77A844D388EB9CFAD6D7032A9</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>LNRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LO</TocCode>
+    <TocName>London Overground</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>TfL</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>ME</TocCode>
+    <TocName>Merseyrail</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>Merseyrail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>NT</TocCode>
+    <TocName>Northern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>northernassist</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SR</TocCode>
+    <TocName>ScotRail</TocName>
+    <Status>Major delays on some routes</Status>
+    <StatusImage>icon-disruption.png</StatusImage>
+    <ServiceGroup>
+      <GroupName>Stonehaven</GroupName>
+      <CurrentDisruption>17BA176CD23E4D18AB281451D3F8EDE0</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>ScotRail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SW</TocCode>
+    <TocName>South Western Railway</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between Windsor & Eton Riverside and Staines]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Staines</GroupName>
+      <CurrentDisruption>2712EB0C2EDC471FB2EFDDF53BB81C0E</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>SW_Help</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SE</TocCode>
+    <TocName>Southeastern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>Se_Railway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SN</TocCode>
+    <TocName>Southern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>SouthernRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SX</TocCode>
+    <TocName>Stansted Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>Stansted_Exp</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>XR</TocCode>
+    <TocName>TfL Rail</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>TfL</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>TL</TocCode>
+    <TocName>Thameslink</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>TLRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>TP</TocCode>
+    <TocName>TransPennine Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <TwitterAccount>TPEAssist</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>AW</TocCode>
+    <TocName>Transport for Wales</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Buses replace trains between Swansea and Shrewsbury]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Heart of Wales Line</GroupName>
+      <CurrentDisruption>47BDF94C4FD6427F850703FD858F7197</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>tfwrail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>WM</TocCode>
+    <TocName>West Midlands Railway</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Delays through Birmingham New Street]]></StatusDescription>
+    <ServiceGroup>
+      <GroupName>Birmingham New Street</GroupName>
+      <CurrentDisruption>84504DB77A844D388EB9CFAD6D7032A9</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>WestMidRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+</NSI>
