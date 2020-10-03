@@ -17,4 +17,9 @@
         <RootNamespace>NreKnowledgebase</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+      <PackageReference Include="Serilog" Version="2.10.0" />
+    </ItemGroup>
+
 </Project>

@@ -29,9 +29,9 @@ namespace NreKnowledgebaseClient.Test
         }
     }
     
-    public class FaresTest : DeserialisationTest<TicketTypeDescriptionList>
+    public class TicketTypesTest : DeserialisationTest<TicketTypeDescriptionList>
     {
-        public override string File => TestFiles.Fares;
+        public override string File => TestFiles.TicketTypes;
 
         [Fact]
         public void DeserialisedClass()
@@ -45,9 +45,9 @@ namespace NreKnowledgebaseClient.Test
         }
     }
     
-    public class FareRestrictionsTest : DeserialisationTest<TicketRestrictions>
+    public class TicketRestrictionsTest : DeserialisationTest<TicketRestrictions>
     {
-        public override string File => TestFiles.FareRestrictions;
+        public override string File => TestFiles.TicketRestrictions;
     }
     
     public class PromotionsTest : DeserialisationTest<PromotionList>
