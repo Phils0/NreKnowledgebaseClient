@@ -40,17 +40,17 @@ namespace NreKnowledgebaseClient.Test
             _responses = responses;
         }
 
-        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             var response = _responses[NumberOfCalls];
             NumberOfCalls++;
             Input.Add(request);
 
-            return new HttpResponseMessage
-            {
-                StatusCode = response.Status,
-                Content = new StringContent(response.Content)
-            };
+            return Task.FromResult(new HttpResponseMessage
+               {
+                   StatusCode = response.Status,
+                   Content = new StringContent(response.Content)
+               }) ;
         }
     }
 }

@@ -85,7 +85,7 @@ namespace NreKnowledgebase
                     return serialiser.Deserialize(reader) as T;
                 }
             }
-            catch (KnowledgebaseException ke)
+            catch (KnowledgebaseException)
             {
                 throw;
             }

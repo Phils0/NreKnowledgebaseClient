@@ -102,27 +102,6 @@ namespace NreKnowledgebaseClient.Test
         }
         
         [Fact]
-        public async void GetTocsFullCode()
-        {
-            var logger = Substitute.For<ILogger>();
-            var sourceFiles = new Dictionary<KnowedgebaseSubjects, string>()
-                {
-                    { KnowedgebaseSubjects.TicketTypes, "Data/TicketTypes.xml" },
-                    { KnowedgebaseSubjects.TicketRestrictions, "Data/TicketRestrictions.xml" },
-                    { KnowedgebaseSubjects.Promotions, "Data/Promotions.xml" },
-                    { KnowedgebaseSubjects.Incidents, "Data/Incidents.xml" },
-                    { KnowedgebaseSubjects.TocServiceIndicators, "Data/ServiceIndicators.xml" },
-                    { KnowedgebaseSubjects.Stations, "Data/Stations.xml" },
-                    { KnowedgebaseSubjects.Tocs, "Data/Tocs.xml" },
-                };
-
-            var knowledgebase = new Knowledgebase(new FileSource(sourceFiles, logger), logger);
-
-            var tocs = await knowledgebase.GetTocs(CancellationToken.None);
-            Assert.NotNull(tocs);
-        }
-        
-        [Fact]
         public async void SourceFailsThrowsKnowledgebaseException()
         {
             var knowledgebase = new Knowledgebase(

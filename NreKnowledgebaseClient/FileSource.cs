@@ -40,7 +40,7 @@ namespace NreKnowledgebase
             catch (FileNotFoundException fe)
             {
                 var message = $"{Enum.GetName(typeof(KnowedgebaseSubjects), subject)} file does not exist: {file}";
-                _logger.Error(message);
+                _logger.Error(fe, message);
                 throw new KnowledgebaseException(message);                
             }
             catch (Exception e)

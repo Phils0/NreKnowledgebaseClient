@@ -142,7 +142,7 @@ namespace NreKnowledgebase
                 _logger.Error(message);
                 throw new KnowledgebaseException(message);
             }
-            catch (KnowledgebaseException ke)
+            catch (KnowledgebaseException)
             {
                 throw;
             }
