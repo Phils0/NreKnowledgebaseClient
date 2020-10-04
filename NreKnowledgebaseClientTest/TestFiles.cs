@@ -20,7 +20,7 @@ namespace NreKnowledgebaseClient.Test
         public static Dictionary<KnowedgebaseSubjects, string> SourceFiles =>
             new Dictionary<KnowedgebaseSubjects, string>()
             {
-                { KnowedgebaseSubjects.TicketType, TicketTypes },
+                { KnowedgebaseSubjects.TicketTypes, TicketTypes },
                 { KnowedgebaseSubjects.TicketRestrictions, TicketRestrictions },
                 { KnowedgebaseSubjects.Promotions, Promotions },
                 { KnowedgebaseSubjects.Incidents, Incidents },

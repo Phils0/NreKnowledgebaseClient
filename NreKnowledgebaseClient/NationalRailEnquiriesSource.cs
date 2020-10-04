@@ -18,7 +18,7 @@ namespace NreKnowledgebase
             new Dictionary<KnowedgebaseSubjects, Uri>()
             {
                 {
-                    KnowedgebaseSubjects.TicketType,
+                    KnowedgebaseSubjects.TicketTypes,
                     new Uri(@"https://opendata.nationalrail.co.uk/api/staticfeeds/4.0/ticket-types")
                 },
                 {
@@ -113,7 +113,7 @@ namespace NreKnowledgebase
             }
             else
             {
-                throw new KnowledgebaseException($"Authentication error.  Response: {response}");
+                throw new KnowledgebaseException($"Authentication error. Response: {response}");
             }
         }
 
@@ -131,8 +131,20 @@ namespace NreKnowledgebase
             try
             {
                 var response = await _client.GetAsync(SourceUrls[subject], token);
-                var stream = await response.Content.ReadAsStreamAsync();
-                return new XmlTextReader(stream);
+                if (response.IsSuccessStatusCode)
+                {
+                    var stream = await response.Content.ReadAsStreamAsync();
+                    return new XmlTextReader(stream);
+                }
+
+                var message =
+                    $"Http Error {response.StatusCode} getting {Enum.GetName(typeof(KnowedgebaseSubjects), subject)}";
+                _logger.Error(message);
+                throw new KnowledgebaseException(message);
+            }
+            catch (KnowledgebaseException ke)
+            {
+                throw;
             }
             catch (Exception e)
             {

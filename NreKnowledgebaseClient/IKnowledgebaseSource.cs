@@ -6,7 +6,7 @@ namespace NreKnowledgebase
 {
     public enum KnowedgebaseSubjects
     {
-        TicketType,
+        TicketTypes,
         TicketRestrictions,
         Promotions,
         Incidents,

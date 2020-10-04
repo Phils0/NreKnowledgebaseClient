@@ -13,7 +13,7 @@ namespace NreKnowledgebaseClient.Test
         private IKnowledgebaseSource _client = new FileSource(TestFiles.SourceFiles, Substitute.For<ILogger>());
 
         [Theory]
-        [InlineData(KnowedgebaseSubjects.TicketType, "TicketTypeDescriptionList")]
+        [InlineData(KnowedgebaseSubjects.TicketTypes, "TicketTypeDescriptionList")]
         [InlineData(KnowedgebaseSubjects.TicketRestrictions, "TicketRestrictions")]
         [InlineData(KnowedgebaseSubjects.Promotions, "PromotionList")]
         [InlineData(KnowedgebaseSubjects.Incidents, "Incidents")]
