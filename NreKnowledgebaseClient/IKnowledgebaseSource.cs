@@ -15,6 +15,9 @@ namespace NreKnowledgebase
         Tocs
     }
     
+    /// <summary>
+    /// Interface to get the knowledgebase data
+    /// </summary>
     public interface IKnowledgebaseSource
     {
         Task<XmlTextReader> GetKnowledgebaseXml(KnowedgebaseSubjects subject, CancellationToken token);

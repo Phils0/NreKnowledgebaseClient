@@ -5,6 +5,9 @@ using NreKnowledgebase.SchemaV5;
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Asynchronous interface to access the knowledgebase
+    /// </summary>
     public interface IKnowledgebaseAsync
     {
         Task<TicketTypeDescriptionList> GetTicketTypes(CancellationToken token);

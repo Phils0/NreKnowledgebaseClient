@@ -10,11 +10,14 @@ using Serilog;
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Client to get the knowledgebase directly from https://opendata.nationalrail.co.uk
+    /// </summary>
     public class NationalRailEnquiriesSource : IKnowledgebaseSource, IDisposable
     {
         public static readonly Uri Authenticate = new Uri(@"https://opendata.nationalrail.co.uk/authenticate");
 
-        public static readonly Dictionary<KnowedgebaseSubjects, Uri> SourceUrls =
+        public static readonly IReadOnlyDictionary<KnowedgebaseSubjects, Uri> SourceUrls =
             new Dictionary<KnowedgebaseSubjects, Uri>()
             {
                 {

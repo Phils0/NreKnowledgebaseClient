@@ -2,6 +2,9 @@
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Exception thrown by the library 
+    /// </summary>
     public class KnowledgebaseException : Exception
     {
         public KnowledgebaseException()

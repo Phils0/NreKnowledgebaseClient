@@ -8,6 +8,10 @@ using Serilog;
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Facade class, acts as the entry point to the library
+    /// implementing <see cref="IKnowledgebase"/> and <see cref="IKnowledgebaseAsync"/>
+    /// </summary>
     public class Knowledgebase : IKnowledgebase, IKnowledgebaseAsync
     {
         private readonly IKnowledgebaseSource _source;

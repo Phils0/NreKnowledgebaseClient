@@ -3,6 +3,9 @@ using NreKnowledgebase.SchemaV5;
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Simple interface to access the knowledgebase 
+    /// </summary>
     public interface IKnowledgebase
     {
         TicketTypeDescriptionList TicketTypes { get; }

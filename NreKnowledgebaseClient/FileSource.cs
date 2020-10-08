@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
@@ -11,6 +8,9 @@ using Serilog;
 
 namespace NreKnowledgebase
 {
+    /// <summary>
+    /// Source that loads the knowledgebase from the file system
+    /// </summary>
     public class FileSource : IKnowledgebaseSource
     {
         private readonly Dictionary<KnowedgebaseSubjects, string> _files;
