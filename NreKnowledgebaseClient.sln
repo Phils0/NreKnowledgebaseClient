@@ -9,6 +9,7 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	RSPS5050 KnowledgeBase Data Feeds 01-00.pdf = RSPS5050 KnowledgeBase Data Feeds 01-00.pdf
 	azure-pipelines.yml = azure-pipelines.yml
+	GitVersion.yml = GitVersion.yml
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NreKnowledgebaseClientTest", "NreKnowledgebaseClientTest\NreKnowledgebaseClientTest.csproj", "{0E7482A6-6B65-4C84-B046-0E344409A9FE}"
