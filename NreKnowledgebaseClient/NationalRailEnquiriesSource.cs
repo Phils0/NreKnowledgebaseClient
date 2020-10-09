@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Xml;
 using Serilog;
 
 namespace NreKnowledgebase
@@ -13,7 +13,7 @@ namespace NreKnowledgebase
     /// <summary>
     /// Client to get the knowledgebase directly from https://opendata.nationalrail.co.uk
     /// </summary>
-    public class NationalRailEnquiriesSource : IKnowledgebaseSource, IDisposable
+    public class NationalRailEnquiriesSource : KnowledgebaseSourceBase, IDisposable
     {
         public static readonly Uri Authenticate = new Uri(@"https://opendata.nationalrail.co.uk/authenticate");
 
@@ -48,16 +48,14 @@ namespace NreKnowledgebase
             };
 
         private readonly HttpClient _client;
-        private readonly ILogger _logger;
 
         public string Token { get; private set; }
 
         public bool IsInititated => !string.IsNullOrEmpty(Token);
 
-        public NationalRailEnquiriesSource(HttpClient client, ILogger logger)
+        public NationalRailEnquiriesSource(HttpClient client, ILogger logger) : base(logger)
         {
             _client = client;
-            _logger = logger;
         }
 
         public async Task Initiate(string user, string password, CancellationToken token)
@@ -126,35 +124,22 @@ namespace NreKnowledgebase
             _client.DefaultRequestHeaders.Remove("X-Auth-Token");
         }
 
-        public async Task<XmlTextReader> GetKnowledgebaseXml(KnowedgebaseSubjects subject, CancellationToken token)
+        public override async Task<Stream> GetKnowledgebaseStream(KnowedgebaseSubjects subject, CancellationToken token)
         {
             if (!IsInititated)
                 throw new KnowledgebaseException("Source not initialised.");
 
-            try
-            {
-                var response = await _client.GetAsync(SourceUrls[subject], token);
-                if (response.IsSuccessStatusCode)
-                {
-                    var stream = await response.Content.ReadAsStreamAsync();
-                    return new XmlTextReader(stream);
-                }
 
-                var message =
-                    $"Http Error {response.StatusCode} getting {Enum.GetName(typeof(KnowedgebaseSubjects), subject)}";
-                _logger.Error(message);
-                throw new KnowledgebaseException(message);
-            }
-            catch (KnowledgebaseException)
+            var response = await _client.GetAsync(SourceUrls[subject], token);
+            if (response.IsSuccessStatusCode)
             {
-                throw;
+                return await response.Content.ReadAsStreamAsync();
             }
-            catch (Exception e)
-            {
-                var message = $"Error getting {Enum.GetName(typeof(KnowedgebaseSubjects), subject)}";
-                _logger.Error(e, message);
-                throw new KnowledgebaseException(message, e);
-            }
+
+            var message =
+                $"Http Error {response.StatusCode} getting {Enum.GetName(typeof(KnowedgebaseSubjects), subject)}";
+            _logger.Error(message);
+            throw new KnowledgebaseException(message);
         }
     }
 }
