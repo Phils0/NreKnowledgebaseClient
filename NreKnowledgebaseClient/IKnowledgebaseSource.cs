@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
 
@@ -21,5 +22,6 @@ namespace NreKnowledgebase
     public interface IKnowledgebaseSource
     {
         Task<XmlTextReader> GetKnowledgebaseXml(KnowedgebaseSubjects subject, CancellationToken token);
+        Task<Stream> GetKnowledgebaseStream(KnowedgebaseSubjects subject, CancellationToken token);
     }
 }
