@@ -1,7 +1,8 @@
 # NreKnowledgebaseClient
 Provides a client API to access the NRE Knowledgebase https://wiki.openraildata.com/index.php?title=KnowledgeBase
 
-[![Build Status](https://dev.azure.com/phils0oss/NreKnowledgebaseClient/_apis/build/status/Phils0.NreKnowledgebaseClient?branchName=master)](https://dev.azure.com/phils0oss/NreKnowledgebaseClient/_build/latest?definitionId=1&branchName=master)
+![Build](https://github.com/phils0/NreKnowledgebaseClient/actions/workflows/build.yml/badge.svg)
+![Package](https://github.com/phils0/NreKnowledgebaseClient/actions/workflows/package.yml/badge.svg)
  
  ## Using the library
  
