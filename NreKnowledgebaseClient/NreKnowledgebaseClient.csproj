@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <LangVersion>8</LangVersion>
+        <LangVersion>latest</LangVersion>
         <Authors>Phil Sharp</Authors>
         <Description>UK Rail: NRE Knowledgebase Client - Provides a client API to access the NRE Knowledgebase https://wiki.openraildata.com/index.php?title=KnowledgeBase</Description>
         <PackageProjectUrl>https://github.com/Phils0/NreKnowledgebaseClient/</PackageProjectUrl>

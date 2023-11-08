@@ -8,13 +8,23 @@ ProjectSection(SolutionItems) = preProject
 	README.md = README.md
 	.gitignore = .gitignore
 	RSPS5050 KnowledgeBase Data Feeds 01-00.pdf = RSPS5050 KnowledgeBase Data Feeds 01-00.pdf
-	azure-pipelines.yml = azure-pipelines.yml
 	GitVersion.yml = GitVersion.yml
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NreKnowledgebaseClientTest", "NreKnowledgebaseClientTest\NreKnowledgebaseClientTest.csproj", "{0E7482A6-6B65-4C84-B046-0E344409A9FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NreKnowledgebaseDownloader", "NreKnowledgebaseDownloader\NreKnowledgebaseDownloader.csproj", "{0FBCD4AE-1664-43F5-9850-17DB3C217B4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{132E3E26-0444-46B6-BFCE-80ADDB96D520}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C9428BDD-9C5A-49A1-A3A9-D57EA5AFDC5C}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\package.yml = .github\workflows\package.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,5 +44,9 @@ Global
 		{0FBCD4AE-1664-43F5-9850-17DB3C217B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBCD4AE-1664-43F5-9850-17DB3C217B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBCD4AE-1664-43F5-9850-17DB3C217B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{132E3E26-0444-46B6-BFCE-80ADDB96D520} = {6FF2AB4F-7CE6-41B0-AB4A-09C3CC42E429}
+		{C9428BDD-9C5A-49A1-A3A9-D57EA5AFDC5C} = {132E3E26-0444-46B6-BFCE-80ADDB96D520}
 	EndGlobalSection
 EndGlobal
